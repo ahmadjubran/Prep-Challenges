@@ -74,8 +74,7 @@ const shuffleString = (str, indicesArr) => {
   let arrResult = [];
 
   for (let i = 0; i < str.length; i++) {
-    let x = indicesArr[i];
-    arrResult[x] = arrString[i];
+    arrResult[indicesArr[i]] = arrString[i];
   }
   return arrResult.join("");
 
